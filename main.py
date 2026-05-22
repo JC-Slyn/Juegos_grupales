@@ -87,7 +87,21 @@ while running:
 
         pause_text = font.render("PAUSA", True, WHITE)
 
-        screen.blit(pause_text, (WIDTH // 2 - 80, HEIGHT // 2))
+        info_text = small_font.render(
+            "ESC para continuar",
+            True,
+            WHITE
+        )
+
+        screen.blit(
+            pause_text,
+            (WIDTH // 2 - 80, HEIGHT // 2 - 40)
+        )
+
+        screen.blit(
+            info_text,
+            (WIDTH // 2 - 110, HEIGHT // 2 + 20)
+        )
 
         pygame.display.update()
         continue
@@ -176,15 +190,6 @@ while running:
     screen.blit(left_text, (WIDTH // 4, 20))
 
     screen.blit(right_text, (WIDTH * 3 // 4, 20))
-
-    # Mostrar FPS
-    fps_text = small_font.render(
-        f"FPS: {int(clock.get_fps())}",
-        True,
-        WHITE
-    )
-
-    screen.blit(fps_text, (10, 10))
 
     pygame.display.update()
 
