@@ -8,8 +8,6 @@ pygame.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Pong Mejorado")
 
-clock = pygame.time.Clock()
-
 font = pygame.font.SysFont(None, 50)
 small_font = pygame.font.SysFont(None, 30)
 
@@ -32,8 +30,6 @@ winner = None
 running = True
 
 while running:
-
-    clock.tick(FPS)
 
     # Eventos
     for event in pygame.event.get():
@@ -178,7 +174,7 @@ while running:
 
         pygame.draw.rect(
             screen,
-            WHITE,
+            GRAY,
             (WIDTH // 2 - 5, i, 10, 20)
         )
 
