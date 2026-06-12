@@ -2,6 +2,7 @@ import pygame
 import random
 from settings import *
 
+#definiendo clases
 class Ball:
 
     def __init__(self):
