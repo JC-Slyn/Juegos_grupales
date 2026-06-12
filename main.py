@@ -177,7 +177,7 @@ while running:
             GRAY,
             (WIDTH // 2 - 5, i, 10, 20)
         )
-
+##hola JOSEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
     # Puntajes
     left_text = font.render(str(left_score), True, WHITE)
 
